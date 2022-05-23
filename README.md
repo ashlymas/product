@@ -3,7 +3,7 @@
 Steps:
 
 1. Import the project in IDE. 
-2. Change DB info from application property. 
+2. Change DB info from application property. *Already changed username to centric and no password, you can change database name.
 3. Run it. 
 
 URLs:
