@@ -10,7 +10,7 @@ URLs:
 
 Save product:
 
-localhost:9090/v1/product/save
+localhost:8080/v1/product/save
 
 RequestBody:
 
@@ -26,7 +26,7 @@ RequestBody:
 
 search product:
 
-localhost:9090/v1/product/get-product-by-category?category=apparel&pageNum=2&max=1
+localhost:8080/v1/product/get-product-by-category?category=apparel&pageNum=2&max=1
 
 
 
