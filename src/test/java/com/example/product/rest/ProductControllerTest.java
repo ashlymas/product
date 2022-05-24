@@ -23,14 +23,14 @@ class ProductControllerTest {
         productModel.setTags(List.of("Red", "Gtare"));
         productModel.setCategory("Cat");
 
-        HttpStatus status = restTemplate.postForEntity("localhost:9090/v1/product/save", productModel, Product.class).getStatusCode();
+        HttpStatus status = restTemplate.postForEntity("localhost:8080/v1/product/save", productModel, Product.class).getStatusCode();
 
         Assertions.assertTrue(status == HttpStatus.OK);
     }
 
     @Test
     void getProductByCategory() {
-        HttpStatus status = restTemplate.getForEntity("localhost:9090/v1/product/get-product-by-category?category=apparel&pageNum=2&max=1", List.class).getStatusCode();
+        HttpStatus status = restTemplate.getForEntity("localhost:8080/v1/product/get-product-by-category?category=apparel&pageNum=2&max=1", List.class).getStatusCode();
 
         Assertions.assertTrue(status == HttpStatus.OK);
     }
